@@ -27,11 +27,11 @@ export default {
             validator: (value) => value.every(option => 'label' in option && 'id' in option)
         },
         modelValue: {
-            type: [String, Number], 
+            type: [String, Number],
             default: ''
         },
         labelField: {
-            type: String, 
+            type: String,
             default: 'names',
             retuired: true
         },
@@ -45,10 +45,10 @@ export default {
 
         const updateValue = (event) => {
             emit('update:modelValue', event.target.value);
-        } 
+        }
 
 
-        return {updateValue}
+        return { updateValue }
 
     }
 }
